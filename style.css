@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root{--black:#10090d;--panel:#1a1016;--wine:#751d37;--wine2:#a12b4b;--gold:#d6b878;--cream:#f4e9dc;--muted:#b9a9a9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{margin:0;background:var(--black);color:var(--cream);font-family:Montserrat,Arial,sans-serif;font-weight:300;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.13;background-image:radial-gradient(#d6b878 0.6px,transparent .6px);background-size:23px 23px}
+.ambient{position:fixed;width:360px;height:360px;border-radius:50%;filter:blur(110px);opacity:.12;pointer-events:none;z-index:-1}.ambient-one{background:#9b2346;top:10%;left:-220px}.ambient-two{background:#b68b45;right:-240px;bottom:5%}
+.topbar{height:72px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:20;background:rgba(16,9,13,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(214,184,120,.2)}
+.brand{font-family:'Cormorant Garamond',serif;font-size:25px;color:var(--gold);text-decoration:none;letter-spacing:2px}.brand span,.heart,.final-names span{color:#c44b68}
+.main-nav{display:flex;gap:28px}.main-nav a{font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:var(--cream);text-decoration:none;transition:.25s}.main-nav a:hover{color:var(--gold)}
+.music-control,.menu-toggle{border:1px solid rgba(214,184,120,.45);background:transparent;color:var(--cream);padding:10px 13px;border-radius:30px;font:inherit;font-size:10px;letter-spacing:.5px;cursor:pointer}.music-dot{display:inline-block;width:7px;height:7px;background:#777;border-radius:50%;margin-right:8px}.music-control.playing .music-dot{background:#d6b878;box-shadow:0 0 10px #d6b878;animation:pulse 1.5s infinite}.menu-toggle{display:none}
+.hero{min-height:calc(100vh - 72px);display:grid;place-items:center;text-align:center;position:relative;padding:90px 20px 110px;background:radial-gradient(ellipse at center,rgba(102,23,49,.22),transparent 58%)}
+.hero-content{max-width:760px;animation:rise 1.2s both}.eyebrow{font-size:9px;letter-spacing:3px;color:var(--gold);line-height:1.8}.ornament{color:var(--gold);font-size:23px;margin:23px 0}
+h1,h2,h3,p{margin-top:0}h1,h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400}h1{font-size:clamp(65px,12vw,126px);line-height:.9;margin:0;color:var(--cream);letter-spacing:-3px}h1 em,h2 em{color:var(--gold);font-weight:400}h1 em{display:block}
+.hero-subtitle{font-family:'Cormorant Garamond',serif;font-size:28px;margin:28px 0 12px}.heart{font-size:19px;padding:0 8px}.hero-copy{font-family:'Cormorant Garamond',serif;font-size:22px;color:#d2c1bd;margin:0 auto 32px}
+.primary-button{background:linear-gradient(135deg,#84223e,#541326);border:1px solid var(--gold);border-radius:2px;color:#fff1df;padding:16px 25px;font:inherit;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;box-shadow:0 10px 35px #0007;transition:.3s}.primary-button:hover{transform:translateY(-3px);box-shadow:0 12px 35px #8d294a55}.primary-button span{color:var(--gold);margin-left:10px}.hint{font-size:9px;color:#9d8b8d;margin-top:18px;letter-spacing:1px}.scroll-cue{position:absolute;bottom:30px;font-size:8px;letter-spacing:2px;color:#a99791}.scroll-cue span{display:block;color:var(--gold);font-size:18px;margin-top:9px}
+.section{padding:105px 7%;max-width:1180px;margin:auto}.section-heading{text-align:center;margin-bottom:48px}.section-heading h2,.letter-wrap h2,.future-section h2{font-size:clamp(42px,6vw,65px);margin:12px 0 16px}.gold-line{width:54px;height:1px;background:var(--gold);margin:22px auto}.section-lead{max-width:700px;margin:0 auto;text-align:center;color:#c6b7b3;font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.65}
+.date-card{max-width:420px;margin:45px auto 0;padding:22px 28px;border-top:1px solid #8f7047;border-bottom:1px solid #8f7047;display:flex;align-items:center;gap:20px;background:linear-gradient(90deg,transparent,#24151c,transparent)}.date-number{font-family:'Cormorant Garamond',serif;font-size:65px;color:var(--gold);line-height:1}.date-card strong,.date-card small{display:block}.date-card strong{font-size:10px;letter-spacing:2px}.date-card small{font-size:10px;color:var(--muted);margin-top:7px}.date-heart{margin-left:auto;color:#bd4561;font-size:22px}
+.timeline{max-width:850px;margin:0 auto;position:relative}.timeline:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(transparent,var(--gold),transparent)}.timeline-item{position:relative;display:flex;width:100%;margin:0 0 45px}.timeline-item.reverse{justify-content:flex-end}.timeline-marker{position:absolute;left:calc(50% - 17px);top:22px;width:34px;height:34px;border:1px solid var(--gold);border-radius:50%;background:var(--black);display:grid;place-items:center;color:var(--gold);font-size:9px;z-index:2}.timeline-card{width:44%;background:var(--panel);border:1px solid rgba(214,184,120,.2);padding:12px;box-shadow:0 16px 45px #0005}.timeline-card img{width:100%;height:260px;object-fit:cover;cursor:zoom-in;display:block}.timeline-text{padding:18px 12px 12px}.mini-date{font-size:8px;letter-spacing:1.8px;color:var(--gold)}.timeline-text h3,.love-card h3{font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:400;margin:10px 0}.timeline-text p,.love-card p{font-size:11px;line-height:1.8;color:var(--muted);margin:0}
+.gallery{display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:16px;align-items:center}.gallery-photo{padding:7px;background:#21151a;border:1px solid rgba(214,184,120,.35);cursor:zoom-in;overflow:hidden}.gallery-photo img{width:100%;height:310px;display:block;object-fit:cover;transition:transform .5s}.gallery-photo:hover img{transform:scale(1.04)}.gallery-photo.wide img{height:390px}
+.love-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.love-card{text-align:center;padding:36px 24px;background:linear-gradient(145deg,#20131a,#140d11);border:1px solid rgba(214,184,120,.22)}.love-card>span{font-family:'Cormorant Garamond',serif;color:var(--gold);font-size:35px}
+.letter-section{max-width:none;background:linear-gradient(120deg,#1a0d14,#241019,#160c11);border-top:1px solid #6f4e3c;border-bottom:1px solid #6f4e3c}.letter-wrap{max-width:760px;margin:auto;text-align:center}.letter-icon{font-size:30px;color:var(--gold);margin:20px}.letter{margin-top:40px;text-align:left;padding:40px clamp(22px,6vw,65px);background:#f0e5d8;color:#38232a;box-shadow:0 18px 50px #0006;position:relative}.letter:before{content:"";position:absolute;inset:9px;border:1px solid #b99a70;pointer-events:none}.letter p{font-family:'Cormorant Garamond',serif;font-size:20px;line-height:1.7;position:relative}.letter-sign{text-align:right!important;margin-top:28px}.letter-sign strong{font-size:25px;color:#761f39}.letter-sign span{color:#a12b4b}
+.future-section{text-align:center;padding-top:115px;padding-bottom:120px}.anniversary{max-width:420px;margin:40px auto 32px;padding:25px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);display:flex;flex-direction:column;gap:12px}.anniversary-label{font-size:9px;letter-spacing:3px;color:var(--gold)}.anniversary strong{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:400;letter-spacing:3px}.anniversary-heart{color:#bd4561}.closing{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:23px;color:#cbb9b4}.final-names{font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold);margin-top:28px}
+footer{text-align:center;border-top:1px solid #3a252d;padding:25px;font-size:8px;letter-spacing:2px;color:#8d7b7d}
+.lightbox{position:fixed;inset:0;background:#080507f2;z-index:50;display:none;align-items:center;justify-content:center;padding:35px}.lightbox.open{display:flex}.lightbox img{max-width:min(92vw,1000px);max-height:86vh;object-fit:contain;border:1px solid var(--gold);padding:6px;background:#1a1016}.lightbox-close{position:absolute;top:20px;right:25px;background:none;border:0;color:white;font-size:40px;cursor:pointer}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}@keyframes pulse{50%{opacity:.45;box-shadow:0 0 2px #d6b878}}
+@media(max-width:760px){.topbar{padding:0 5%;height:64px}.menu-toggle{display:block;margin-left:auto;margin-right:10px}.main-nav{display:none;position:absolute;top:64px;left:0;right:0;background:#160d12;padding:18px 7%;border-bottom:1px solid #6b4b39;flex-direction:column;gap:20px}.main-nav.open{display:flex}.music-control{padding:9px 10px;font-size:9px}.hero{min-height:calc(90vh - 64px);padding-top:70px}.section{padding:78px 6%}.timeline:before{left:16px}.timeline-item,.timeline-item.reverse{justify-content:flex-start;padding-left:48px}.timeline-marker{left:0}.timeline-card{width:100%}.timeline-card img{height:230px}.gallery{grid-template-columns:1fr 1fr}.gallery-photo img,.gallery-photo.wide img{height:220px}.gallery-photo.wide{grid-column:span 2}.love-grid{grid-template-columns:1fr}.letter{padding:32px 24px}.letter p{font-size:18px}.anniversary strong{font-size:34px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Espacio reservado para la carta personal de Carlos */
+.letter-blank{min-height:440px;display:flex;flex-direction:column}
+.write-lines{flex:1;min-height:230px;display:flex;flex-direction:column;justify-content:space-around;margin:8px 0 20px}
+.write-lines span{display:block;border-bottom:1px solid rgba(117,31,57,.22);height:30px}
+
+.games-invite{text-align:center;border-top:1px solid rgba(214,184,120,.18);border-bottom:1px solid rgba(214,184,120,.18);background:linear-gradient(110deg,rgba(91,20,43,.18),rgba(20,12,17,.25))}
+.game-link{display:inline-block;text-decoration:none;margin-top:32px}
+
+
+/* Nueva paleta: colores más vivos, alegres y románticos */
+:root{--black:#100b24;--panel:#21143d;--wine:#a51f65;--wine2:#ed3f91;--gold:#ffd166;--cream:#fff1fa;--muted:#d4bfd9}
+body{background:radial-gradient(ellipse at 15% 15%,#32104c 0,transparent 42%),radial-gradient(ellipse at 90% 70%,#40133e 0,transparent 40%),var(--black)}
+body:before{opacity:.19;background-image:radial-gradient(#ff8ac4 .7px,transparent .7px)}
+.ambient-one{background:#ff2f92;opacity:.2}.ambient-two{background:#ffd166;opacity:.18}
+.topbar{background:rgba(16,11,36,.94);border-bottom-color:rgba(255,209,102,.35)}
+.brand,.eyebrow,.ornament,.scroll-cue span{color:#ffd166}
+.brand span,.heart,.final-names span,.date-heart{color:#ff5ca8}
+h1 em,h2 em{color:#ff83bd}
+.hero{background:radial-gradient(ellipse at center,rgba(222,44,139,.3),transparent 62%)}
+.primary-button{background:linear-gradient(135deg,#ed3f91,#8d236f);border-color:#ffd166;color:#fff}
+.primary-button:hover{box-shadow:0 12px 35px #ed3f9166}
+.date-card{border-color:#ff75b7;background:linear-gradient(90deg,transparent,#321641,transparent)}
+.date-number{color:#ffd166}
+.timeline-card,.love-card,.letter,.gallery-photo{border-color:rgba(255,117,183,.38)}
+.timeline-marker{border-color:#ffd166;color:#ffd166;background:#180d2d}
+.gold-line{background:#ff75b7}
+.love-counter{max-width:620px;margin:38px auto 0;padding:27px 24px;border:1px solid rgba(255,117,183,.65);border-radius:18px;background:linear-gradient(135deg,rgba(91,26,104,.88),rgba(35,17,67,.94));box-shadow:0 15px 45px #e72b8b24;text-align:center}
+.love-counter h3{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:400;color:#fff1fa;margin:8px 0 20px}
+.counter-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}
+.counter-grid div{padding:14px 6px;border-radius:12px;background:linear-gradient(160deg,#ed3f91,#8d236f);border:1px solid #ffacd2}
+.counter-grid strong{display:block;font-family:'Cormorant Garamond',serif;font-size:clamp(27px,5vw,42px);line-height:1.1;color:#fff}
+.counter-grid span{display:block;font-size:8px;letter-spacing:1px;color:#ffe2f0;margin-top:7px}
+.love-counter>small{color:#e8c9e3;font-size:10px}
+@media(max-width:480px){.counter-grid{gap:6px}.counter-grid div{padding:12px 3px}.counter-grid span{font-size:7px}}

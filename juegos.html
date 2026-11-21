@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10090d">
+<title>Nuestro mundo de juegos | Carlos & Esther</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="juegos.css">
+</head>
+<body class="games-page">
+<header class="topbar">
+  <a class="brand" href="index.html">C <span>♥</span> E</a>
+  <a class="back-link" href="index.html">← Volver a nuestra historia</a>
+</header>
+<main class="game-main">
+  <section class="game-hero">
+    <p class="eyebrow">UN RETO HECHO PARA TI</p>
+    <h1 class="game-title">Nuestro mundo de <em>juegos</em></h1>
+    <p class="game-intro">Mi niña bonita, primero vamos a recordar un poquito de nosotros. Cuando termines el cuestionario, se abrirá el rompecabezas. ♥</p>
+  </section>
+
+  <section class="game-panel" id="quizPanel">
+    <p class="eyebrow">RETO 1 · ¿CUÁNTO RECUERDAS?</p>
+    <div class="progress-track"><div id="progressBar"></div></div>
+    <p class="question-count" id="questionCount">Pregunta 1 de 5</p>
+    <h2 id="questionText">¿En qué fecha comenzó nuestra historia?</h2>
+    <div class="answers" id="answers"></div>
+    <p class="feedback" id="feedback" aria-live="polite"></p>
+    <button class="primary-button next-button" id="nextButton" disabled>Siguiente pregunta</button>
+  </section>
+
+  <section class="game-panel locked-panel" id="lockedPanel">
+    <div class="lock-icon">🔒</div>
+    <p class="eyebrow">RETO 2 · BLOQUEADO</p>
+    <h2>Un recuerdo hecho piezas</h2>
+    <p>Completa primero las cinco preguntas para desbloquear nuestro rompecabezas.</p>
+    <div class="lock-status" id="lockStatus">5 preguntas te esperan</div>
+  </section>
+
+  <section class="game-panel puzzle-panel hidden" id="puzzlePanel">
+    <p class="eyebrow">RETO 2 · NUESTRO ROMPECABEZAS</p>
+    <h2>Arma este <em>recuerdo</em></h2>
+    <p class="puzzle-help">Toca una pieza que esté junto al espacio vacío para moverla. ¡Ordena la foto!</p>
+    <div class="puzzle-board" id="puzzleBoard" aria-label="Rompecabezas de 3 por 3"></div>
+    <p class="moves">Movimientos: <strong id="moveCount">0</strong></p>
+    <button class="secondary-button" id="shuffleButton">Mezclar de nuevo</button>
+    <p class="feedback" id="puzzleFeedback" aria-live="polite"></p>
+  </section>
+
+  <section class="win-panel hidden" id="winPanel">
+    <div class="win-heart">♥</div>
+    <p class="eyebrow">¡LO LOGRASTE!</p>
+    <h2>¡Muy bien, mi niña bonita!</h2>
+    <p>El mejor premio de esta aventura es tenerte en mi vida. Gracias por cada recuerdo y por todos los que todavía nos esperan.</p>
+    <strong>Con cariño, tu Carlos ♥</strong>
+    <a href="index.html" class="primary-button return-button">Volver a nuestra historia</a>
+  </section>
+</main>
+<footer>HECHO CON AMOR · CARLOS & ESTHER · 2026</footer>
+<script src="juegos.js"></script>
+</body>
+</html>

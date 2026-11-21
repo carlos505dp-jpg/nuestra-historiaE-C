@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10090d">
+  <meta name="description" content="Nuestra historia: Carlos y Esther, tres meses de recuerdos.">
+  <title>Nuestra historia | Carlos & Esther</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">C <span>♥</span> E</a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+    <nav id="mainNav" class="main-nav">
+      <a href="#historia">Nuestra historia</a>
+      <a href="#recuerdos">Recuerdos</a>
+      <a href="#carta">Una carta</a>
+      <a href="#futuro">Nuestro futuro</a>
+      <a href="juegos.html">Jugar ♥</a>
+    </nav>
+    <button class="music-control" id="musicToggle" type="button" aria-label="Reproducir o pausar música">
+      <span class="music-dot"></span><span id="musicLabel">Música apagada</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">23 · 08 · 2026 — PARA SIEMPRE EN NUESTROS RECUERDOS</p>
+        <div class="ornament">✦</div>
+        <h1>Nuestra <em>historia</em></h1>
+        <p class="hero-subtitle">Carlos <span class="heart">♥</span> Esther</p>
+        <p class="hero-copy">Tres meses, miles de sonrisas y una historia que apenas comienza.</p>
+        <button class="primary-button" id="enterButton" type="button">Abrir nuestra historia <span>♥</span></button>
+        <p class="hint">Un pequeño lugar hecho con mucho amor para ti.</p>
+      </div>
+      <div class="scroll-cue">DESLIZA PARA DESCUBRIR <span>↓</span></div>
+    </section>
+
+    <section class="intro section" id="historia">
+      <div class="section-heading">
+        <p class="eyebrow">CAPÍTULO UNO</p>
+        <h2>Y así comenzó <em>todo...</em></h2>
+        <div class="gold-line"></div>
+      </div>
+      <p class="section-lead">El 23 de agosto de 2026 empezó una aventura que hoy tiene un lugar muy especial en mi corazón. No se trata solamente del tiempo, sino de cada instante que hemos convertido en un recuerdo nuestro.</p>
+      <div class="date-card">
+        <span class="date-number">23</span>
+        <div><strong>AGOSTO 2026</strong><small>El comienzo de nosotros</small></div>
+        <span class="date-heart">♥</span>
+      </div>
+      <div class="love-counter" aria-live="off">
+        <p class="eyebrow">CADA SEGUNDO CONTIGO CUENTA</p>
+        <h3>Tiempo que llevamos juntos ♥</h3>
+        <div class="counter-grid">
+          <div><strong id="countDays">0</strong><span>DÍAS</span></div>
+          <div><strong id="countHours">00</strong><span>HORAS</span></div>
+          <div><strong id="countMinutes">00</strong><span>MINUTOS</span></div>
+          <div><strong id="countSeconds">00</strong><span>SEGUNDOS</span></div>
+        </div>
+        <small>Desde el 23 de agosto de 2026</small>
+      </div>
+    </section>
+
+    <section class="timeline-section section">
+      <div class="section-heading">
+        <p class="eyebrow">NUESTRO CAMINO</p>
+        <h2>Pequeños momentos, <em>grandes recuerdos</em></h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-marker">01</div>
+          <div class="timeline-card">
+            <img src="fotos/recuerdo-01.jpg" alt="Carlos y Esther compartiendo un momento juntos" class="open-photo">
+            <div class="timeline-text"><span class="mini-date">UN RECUERDO DE NOSOTROS</span><h3>Una sonrisa que quiero guardar</h3><p>De esos momentos sencillos que se vuelven especiales simplemente porque estoy contigo.</p></div>
+          </div>
+        </article>
+        <article class="timeline-item reverse">
+          <div class="timeline-marker">02</div>
+          <div class="timeline-card">
+            <img src="fotos/recuerdo-02.jpg" alt="Carlos y Esther juntos entre mariposas" class="open-photo">
+            <div class="timeline-text"><span class="mini-date">UN DÍA PARA RECORDAR</span><h3>Un mundo lleno de mariposas</h3><p>Un recuerdo bonito de los muchos lugares y experiencias que todavía nos esperan.</p></div>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-marker">03</div>
+          <div class="timeline-card">
+            <img src="fotos/recuerdo-03.jpg" alt="Esther jugando básquetbol" class="open-photo">
+            <div class="timeline-text"><span class="mini-date">ALGO QUE TAMBIÉN AMO DE TI</span><h3>Verte disfrutar lo que te gusta</h3><p>Me encanta descubrir tus gustos, acompañarte y celebrar esas pequeñas cosas que te hacen ser tú.</p></div>
+          </div>
+        </article>
+        <article class="timeline-item reverse">
+          <div class="timeline-marker">04</div>
+          <div class="timeline-card">
+            <img src="fotos/recuerdo-04.jpg" alt="Carlos y Esther compartiendo un beso" class="open-photo">
+            <div class="timeline-text"><span class="mini-date">UN INSTANTE NUESTRO</span><h3>Cerca de ti</h3><p>Hay momentos que no necesitan muchas palabras; basta con estar cerquita y guardar el recuerdo.</p></div>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-marker">05</div>
+          <div class="timeline-card">
+            <img src="fotos/recuerdo-05.jpg" alt="Carlos y Esther tomados de la mano durante un paseo" class="open-photo">
+            <div class="timeline-text"><span class="mini-date">SIEMPRE DE TU MANO</span><h3>Caminar juntos</h3><p>Me gusta la idea de seguir descubriendo lugares y caminos contigo, paso a paso.</p></div>
+          </div>
+        </article>
+        <article class="timeline-item reverse">
+          <div class="timeline-marker">06</div>
+          <div class="timeline-card">
+            <img src="fotos/recuerdo-06.jpg" alt="Carlos y Esther compartiendo un momento juntos" class="open-photo">
+            <div class="timeline-text"><span class="mini-date">UN RECUERDO TRANQUILO</span><h3>En los pequeños detalles</h3><p>A veces los recuerdos más bonitos son esos instantes sencillos en los que simplemente estamos juntos.</p></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery-section section" id="recuerdos">
+      <div class="section-heading">
+        <p class="eyebrow">CAPÍTULO DOS</p>
+        <h2>Nuestro pequeño <em>álbum</em></h2>
+        <div class="gold-line"></div>
+        <p class="section-lead">Toca una fotografía para verla más de cerca.</p>
+      </div>
+      <div class="gallery">
+        <button class="gallery-photo tall" data-photo="fotos/recuerdo-01.jpg" aria-label="Ampliar fotografía 1"><img src="fotos/recuerdo-01.jpg" alt="Carlos y Esther juntos"></button>
+        <button class="gallery-photo wide" data-photo="fotos/recuerdo-02.jpg" aria-label="Ampliar fotografía 2"><img src="fotos/recuerdo-02.jpg" alt="Carlos y Esther entre mariposas"></button>
+        <button class="gallery-photo tall" data-photo="fotos/recuerdo-03.jpg" aria-label="Ampliar fotografía 3"><img src="fotos/recuerdo-03.jpg" alt="Esther jugando básquetbol"></button>
+        <button class="gallery-photo tall" data-photo="fotos/recuerdo-04.jpg" aria-label="Ampliar fotografía 4"><img src="fotos/recuerdo-04.jpg" alt="Carlos y Esther compartiendo un beso"></button>
+        <button class="gallery-photo wide" data-photo="fotos/recuerdo-05.jpg" aria-label="Ampliar fotografía 5"><img src="fotos/recuerdo-05.jpg" alt="Carlos y Esther tomados de la mano"></button>
+        <button class="gallery-photo tall" data-photo="fotos/recuerdo-06.jpg" aria-label="Ampliar fotografía 6"><img src="fotos/recuerdo-06.jpg" alt="Carlos y Esther juntos"></button>
+      </div>
+    </section>
+
+    <section class="love-section section">
+      <div class="section-heading">
+        <p class="eyebrow">CAPÍTULO TRES</p>
+        <h2>Lo que haces <em>especial</em> mi mundo</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="love-grid">
+        <article class="love-card"><span>✧</span><h3>Tu forma de ser</h3><p>Porque tienes una manera muy tuya de hacer que un día común se convierta en uno bonito.</p></article>
+        <article class="love-card"><span>♡</span><h3>Tu sonrisa</h3><p>Una de esas cosas que podría mirar una y otra vez y que siempre me alegra el corazón.</p></article>
+        <article class="love-card"><span>∞</span><h3>Lo que construimos</h3><p>Porque cada conversación, abrazo y aventura suma algo a esta historia que compartimos.</p></article>
+      </div>
+    </section>
+
+    <section class="letter-section section" id="carta">
+      <div class="letter-wrap">
+        <p class="eyebrow">CAPÍTULO CUATRO · PARA TI, MI NIÑA</p>
+        <div class="letter-icon">✉</div>
+        <h2>Una carta <em>para Esther</em></h2>
+        <div class="gold-line"></div>
+        <div class="letter letter-blank">
+          <p>Mi niña bonita:</p>
+          <div class="write-lines" aria-label="Espacio reservado para escribir tu carta">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p class="letter-sign">Con todo mi cariño,<br><strong>Tu Carlos</strong> <span>♥</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="games-invite section">
+      <p class="eyebrow">UNA PEQUEÑA SORPRESA</p>
+      <h2>¿Jugamos un <em>ratito?</em></h2>
+      <p class="section-lead">Preparé una aventura para ti: primero demuestra cuánto recuerdas de nosotros y después desbloquea un reto especial.</p>
+      <a class="primary-button game-link" href="juegos.html">Entrar a nuestro mundo de juegos <span>♥</span></a>
+    </section>
+
+    <section class="future-section section" id="futuro">
+      <p class="eyebrow">CAPÍTULO CINCO</p>
+      <h2>Esto apenas <em>comienza...</em></h2>
+      <p class="section-lead">Por más fotografías, abrazos, risas, lugares nuevos y días en los que sigamos eligiéndonos.</p>
+      <div class="anniversary">
+        <span class="anniversary-label">NUESTROS TRES MESES</span>
+        <strong>23 · 11 · 2026</strong>
+        <span class="anniversary-heart">♥</span>
+      </div>
+      <p class="closing">Mi lugar favorito seguirá siendo donde pueda compartir momentos contigo.</p>
+      <p class="final-names">Carlos <span>♥</span> Esther</p>
+    </section>
+  </main>
+
+  <footer>HECHO CON AMOR · NUESTRA HISTORIA · 2026</footer>
+
+  <audio id="backgroundMusic" src="musica/labios-de-cereza-2.mp3" preload="auto" loop></audio>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar fotografía">×</button>
+    <img id="lightboxImage" src="" alt="Fotografía ampliada">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

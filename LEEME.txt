@@ -1,0 +1,43 @@
+NUESTRA HISTORIA — CARLOS & ESTHER
+===================================
+
+CÓMO ABRIR LA PÁGINA
+1. Descomprime el archivo ZIP.
+2. Abre la carpeta "Nuestra_historia".
+3. Haz doble clic en index.html para abrir la página en tu navegador.
+4. Presiona "Abrir nuestra historia" para iniciar la canción.
+
+EDITAR EN SUBLIME TEXT
+- Abre la carpeta completa en Sublime Text.
+- index.html contiene los textos y secciones.
+- style.css controla colores, tamaños y diseño.
+- script.js controla música, menú y ampliación de fotografías.
+- La sección de la carta está en blanco para que Carlos escriba su propio mensaje
+  dentro de index.html, entre las etiquetas de la sección letter.
+- Las fotos están en la carpeta fotos.
+- La canción está en musica/labios-de-cereza-2.mp3.
+
+CAMBIAR O AGREGAR FOTOGRAFÍAS
+La página incluye seis fotografías: recuerdo-01.jpg hasta recuerdo-06.jpg.
+Puedes reemplazarlas conservando esos nombres. Si agregas más, también hay que
+crear sus etiquetas en index.html.
+
+MÚSICA
+La canción comienza después de pulsar el botón de entrada, porque los navegadores
+bloquean normalmente la reproducción automática con sonido. El reproductor queda
+en la página y sigue sonando al navegar entre secciones.
+
+PUBLICAR EN INTERNET
+Para compartirla mediante un enlace, sube la carpeta completa a un servicio de
+alojamiento web estático (por ejemplo, GitHub Pages). No subas solamente index.html:
+también se necesitan style.css, script.js, fotos/ y musica/.
+
+JUEGOS
+- La página independiente de juegos es juegos.html.
+- Desde la portada hay un botón "Entrar a nuestro mundo de juegos".
+- Primero se completa el cuestionario; al terminar se desbloquea el rompecabezas.
+- juegos.css y juegos.js controlan el diseño y la lógica de los juegos.
+- El rompecabezas utiliza la fotografía fotos/recuerdo-04.jpg.
+
+
+Actualización: el rompecabezas utiliza la foto de ustedes entre mariposas. La página principal incluye un contador en vivo desde el 23 de agosto de 2026 y una paleta de colores más vivos.
